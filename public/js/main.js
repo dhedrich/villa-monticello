@@ -1,6 +1,3 @@
-
-
-
 /*------- Smooth Scroll -------*/
 
 $('a[href^="#"]').on('click', function(event) {
@@ -13,7 +10,7 @@ $('a[href^="#"]').on('click', function(event) {
             scrollTop: target.offset().top
         }, 1000);
     }
-
+    
 });
 
 
