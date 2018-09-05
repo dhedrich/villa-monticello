@@ -13,6 +13,11 @@ $('a[href^="#"]').on('click', function(event) {
     
 });
 
+/*------- Gallery Image Select -------*/
+$('.item').click(function() {
+  $(this).toggleClass('active');
+});
+
 
 
 /**
