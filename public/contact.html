@@ -40,9 +40,6 @@
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="reviews.html">Reviews</a>
-					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 						 aria-expanded="false">
@@ -52,18 +49,22 @@
 							<a class="dropdown-item" href="AIBC.html">All-Inclusive Basic Care</a>
 							<a class="dropdown-item" href="SS.html">Special Services</a>
 							<a class="dropdown-item" href="DCP.html">Dementia Care Program</a>
+							<a class="dropdown-item" href="OPC.html">Other Programs of Care</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="TCPR.html">Total Care Package Rate</a>
 						</div>
 					</li>
 					<!-- <li class="nav-item">
-						<a class="nav-link" href="program.html">Program</a>
-					</li> -->
+							<a class="nav-link" href="program.html">Program</a>
+						</li> -->
 					<li class="nav-item">
 						<a class="nav-link" href="gallery.html">Gallery</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="reviews.html">Reviews</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -90,16 +91,38 @@
 	<section class="service-sec first-sec" id="services">
 		<div class="container">
 			<div class="row section-heading">
-				<div class="col-md-9">
+				<div class="col-md-8">
 					<div class="heading">
 						<h2>
-							<small>Small Heading</small>Bigger Heading</h2>
+							<small>We'd Love To Hear From You</small>Contact Us</h2>
 						<hr>
 					</div>
 				</div>
-				<div class="col-md-3 section-heading-img">
+				<div class="col-md-4 section-heading-img">
 					<img class="img-fluid service-logo" src="./img/Main Logo PNG.png" alt="">
 				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 form-container">
+					<form>
+						<div class="form-group">
+							<label for="contactName">Name</label>
+							<input type="text" class="form-control" id="contactName" placeholder="John Doe">
+						</div>
+						<div class="form-group">
+							<label for="contactEmail">Email</label>
+							<input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="johndoe@gmail.com">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="contactMessage">Message</label>
+							<textarea class="form-control" rows="3" id="contactMessage"></textarea>
+						</div>
+						<button id="submit" type="submit" class="btn btn-aqua btn-capsul">Submit</button>
+					</form>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-2"></div>
 			</div>
 
 		</div>

@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 50px;
 }
 .btn-aqua {
-	background: #402c00;
+	background: #b38d3a;
 	color: #fff;
 }
 .btn-aqua:hover {
@@ -85,6 +85,30 @@ section {
 	margin-top:50px;
 }
 
+.form-container {
+	border: 8px solid #b38d3a;
+	color: #fff;
+	background: #402c00;
+	width:100%;
+	padding: 20px;
+	/* margin: 0 20px; */
+}
+
+.form-control {
+	border-radius: 0;
+	background: #fff0e3;
+}
+
+.text-muted {
+	color: #b38d3a !important;
+}
+#submit:hover {
+	color: #b38d3a;
+	background: #fff;
+}
+.obvi-link {
+	text-decoration: underline;
+}
 
 /* TOP HEADER
 -------------------------------------------------- */
