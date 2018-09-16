@@ -1,4 +1,28 @@
 /*------- Smooth Scroll -------*/
+var photoArr = [
+  "bedroom",
+  "grapes-1",
+  "grapes-sun",
+  "house-symmetric",
+  "palm-trees",
+  "road",
+  "tree-susnet.jpg"
+]
+
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+  }
+}
+
+shuffleArray(photoArr)
+
+for (i in photoArr) {
+  $("#masonry").append(`<div class="item"><img src="./img/${photoArr[i]}.jpg" alt=""></div>`)
+}
 
 $('a[href^="#"]').on('click', function (event) {
 
