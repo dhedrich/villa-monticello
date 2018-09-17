@@ -23,6 +23,10 @@
 	.swiper-container{
 		height: 45vh;
 	}
+	.main-slider .swiper-pagination-bullet {
+		width: 5px;
+		height: 5px;
+	}
 }
 .swiper-slide {
 	text-align: center;
