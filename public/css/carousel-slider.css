@@ -3,12 +3,17 @@
 
 .floater {
 	position: absolute;
-	top:0;
+	top:69%;
 	bottom:0;
-	left:0;
-	right:0;
+	/* left:63%; */
+	right:59%;
 	width:50vw;
 	margin: auto;
+	-webkit-transform: scale(0.39); /* Saf3.1+, Chrome */
+	-moz-transform: scale(0.39); /* FF3.5+ */
+	 -ms-transform: scale(0.39); /* IE9 */
+	  -o-transform: scale(0.39); /* Opera 10.5+ */
+		 transform: scale(0.39);
 	z-index:10;
 	-webkit-filter: drop-shadow(5px 5px 5px #222 );
 	filter: drop-shadow(5px 5px 5px #222);
