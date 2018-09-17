@@ -169,9 +169,8 @@ section {
 	font-size: 14px;
 	font-weight: 500;
 	padding: 12px 18px!important;
-}
-.top-bar .nav-link {
-	color: #000
+	color: #000;
+	border-bottom: 2px solid #00000000;
 }
 .top-bar .navbar-nav .nav-item {
 	margin: 0
@@ -214,6 +213,34 @@ section {
 .dropdown-divider {
 	border-color: #402c00;
 }
+
+a.navbar-brand.mx-auto {
+	padding-left: 0;
+}
+
+@media (max-width: 1200px) {
+	a.navbar-brand.mx-auto {
+		font-size: 20px;
+	}
+}
+@media (max-width: 992px) {
+	a.navbar-brand.mx-auto {
+		font-size: 26px;
+	}
+}
+@media (max-width: 767.5px) {
+	a.navbar-brand.mx-auto {
+		font-size: 20px;
+		margin-left: 20px !important;
+	}
+}
+/* 
+@media (max-width: 768px) {
+	a.navbar-brand.mx-auto {
+		font-size: auto;
+
+	}
+} */
 
 /* SERVICES SECTION
 -------------------------------------------------- */
@@ -414,7 +441,6 @@ section {
 	font-size:10px;
 	color: #fff;
 	text-align: center;
-	margin: 0 auto;
 	padding-top: 50px;
 }
 .line {
