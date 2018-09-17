@@ -23,9 +23,9 @@
 	.swiper-container{
 		height: 45vh;
 	}
-	.main-slider .swiper-pagination-bullet {
-		width: 5px;
-		height: 5px;
+	span.swiper-pagination-bullet {
+		width: 5px !important;
+		height: 5px !important;
 	}
 }
 .swiper-slide {
