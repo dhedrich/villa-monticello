@@ -17,6 +17,7 @@ var photoArr = [
   "vm1-1",
   "vm1-2",
   "vm1-3",
+  "vm1-3-edit",
   // "vm1-4",
   // "vm1-5",
   "vm1-6",
@@ -30,7 +31,8 @@ var photoArr = [
   "vm1-14",
   "vm1-15",
   "vm1-16",
-  "vm1-17"
+  "vm1-17",
+  "vm1-bedroom-edit"
 ]
 
 function shuffleArray(array) {
