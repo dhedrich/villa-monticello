@@ -3,8 +3,6 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
   $(this).ekkoLightbox()
 })
 
-
-
 /*------- Smooth Scroll -------*/
 var photoArr = [
   // "bedroom",
@@ -32,7 +30,9 @@ var photoArr = [
   "vm1-14",
   "vm1-7",
   "vm1-10",
-  "vm1-16"
+  "vm1-aerial",
+  "vm1-16",
+  "vm1-sign"
 ]
 
 function shuffleArray(array) {
