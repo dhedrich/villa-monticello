@@ -8,31 +8,31 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
 /*------- Smooth Scroll -------*/
 var photoArr = [
   // "bedroom",
-  // "grapes-1",
-  "grapes-sun",
-  "house-symmetric",
   // "palm-trees",
   // "road",
   // "tree-sunset",
-  "vm1-1",
-  "vm1-2",
-  "vm1-3",
-  "vm1-3-edit",
+  // "vm1-3-edit",
   // "vm1-4",
   // "vm1-5",
-  "vm1-6",
-  "vm1-7",
   // "vm1-8",
-  "vm1-9",
-  "vm1-10",
   // "vm1-11",
-  "vm1-12",
   // "vm1-13",
-  "vm1-14",
-  "vm1-15",
-  "vm1-16",
+  // "vm1-15",
+  // "grapes-sun",
+  "vm1-2",
+  "vm1-6",
+  "vm1-3",
+  "vm1-12",
+  "vm1-1",
+  "grapes-1",
+  "vm1-bedroom-edit",
+  "house-symmetric",
+  "vm1-9",
   "vm1-17",
-  "vm1-bedroom-edit"
+  "vm1-14",
+  "vm1-7",
+  "vm1-10",
+  "vm1-16"
 ]
 
 function shuffleArray(array) {
@@ -44,7 +44,7 @@ function shuffleArray(array) {
   }
 }
 
-shuffleArray(photoArr)
+// shuffleArray(photoArr)
 
 for (i in photoArr) {
   $(".gallery").append(`<a href="./img/${photoArr[i]}.jpg" data-toggle="lightbox" class="col-sm-4" data-gallery="example-gallery"><img src="./img/${photoArr[i]}.jpg" class="img-fluid gallery-pic"></a>`)

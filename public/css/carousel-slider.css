@@ -22,8 +22,8 @@
 /*Swiper*/
 .swiper-container {
 	width: 100%;
-	height: 100vh;
-	/* margin-top:65px; */
+	height: 89.5vh;
+	margin-top:10.5vh;
 }
 @media (max-width: 767.5px) {
 	.swiper-container{
@@ -51,6 +51,9 @@
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+}
+.swiper-slide h3 {
+	justify-content: right;
 }
 .main-slider .slider-bg-position {
 	background-size: cover!important;
