@@ -3,6 +3,28 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
   $(this).ekkoLightbox()
 })
 
+// ease-in animation when element is within viewport
+$.fn.isInViewport = function () {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+var elArray = ["hidden1", "hidden2", "hidden3"]
+
+window.setInterval(function () {
+  for (i in elArray) {
+    var el = $(`.${elArray[i]}`)
+    var isInView = el.isInViewport()
+    if (isInView && !el.hasClass("animated")) {
+      el.removeClass("hidden")
+      el.addClass("animated fadeInUp fadeIn")
+    }
+  }
+}, 120 / 1000);
+
 /*------- Smooth Scroll -------*/
 var photoArr = [
   // "bedroom",
