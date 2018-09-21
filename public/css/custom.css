@@ -131,8 +131,8 @@ section {
 .navbar-toggler {
 	/* width: 30px; */
 	position: absolute;
-	top: 8px;
-	right: 21px;
+	top: 1px;
+	right: 10px;
 	color: #000;
 	border: none;
 	color: #402c00;
@@ -240,6 +240,7 @@ a.navbar-brand.mx-auto {
 	a.navbar-brand.mx-auto {
 		font-size: 20px;
 		margin-left: 20px !important;
+		margin-right: 0 !important;
 	}
 }
 /* 
