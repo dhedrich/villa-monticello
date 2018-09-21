@@ -21,6 +21,7 @@ window.setInterval(function () {
     if (isInView && !el.hasClass("animated")) {
       el.removeClass("hidden")
       el.addClass("animated fadeInUp fadeIn")
+      el.removeAttr("style")
     }
   }
 }, 120 / 1000);
@@ -99,16 +100,6 @@ $('.item').click(function () {
 //   console.log("WORKING")
 //   console.log(data)
 // })
-
-$(document).ready(function () {
-
-  var postPromise = getPosts('hotpinksunrise')
-
-  postPromise.then(function (posts) {
-    console.log(posts)
-  })
-
-})
 
 
 /**
