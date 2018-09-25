@@ -14,9 +14,13 @@ body {
 	color: #5a5a5a;
 	background-color: #fff0e3;
 	font-family: 'Lato', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
 }
 h1, h2, h3, h4, h5 {
 	font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+	/* font-family: 'Lato', sans-serif; */
 }
 .parallax-section {
 	background-attachment: fixed!important;
@@ -36,7 +40,7 @@ h1, h2, h3, h4, h5 {
 	color: #fff;
 }
 .btn-aqua:hover {
-	background: #10629b;
+	background: #402c00;
 	color: #fff;
 }
 .btn-dark-blue {
@@ -91,6 +95,7 @@ section {
 	background: #402c00;
 	width:100%;
 	padding: 20px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 	/* margin: 0 20px; */
 }
 
@@ -127,6 +132,7 @@ section {
 	padding: 6px 0;
 	z-index: 6;
 	border-bottom: 8px solid #402c00;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 .navbar-toggler {
 	/* width: 30px; */

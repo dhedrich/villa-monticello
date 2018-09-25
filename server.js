@@ -7,7 +7,7 @@ var cheerio = require('cheerio')
 
 // initialize express parameters
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 // use public directory
 app.use(express.static(__dirname + '/public'))
@@ -77,7 +77,7 @@ app.get('/scrape', (req, res) => {
             var url = $(el).children('.blog-thumbnail-context').children('a').attr('href')
             var img = $(el).children('.blog-thumbnail-image').children('a').children('img').attr('src')
             var category = $(el).parent().attr('class')
-            category = category.slice(category.indexOf('category'), category.length)
+            category = category.slice(category.indexOf('category'))
             category = category.split(' ')[0]
             category = category.split('-')
             category.shift()
