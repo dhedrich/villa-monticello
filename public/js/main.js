@@ -55,7 +55,8 @@ var photoArr = [
   "vm1-10",
   "vm1-aerial",
   "vm1-16",
-  "vm1-sign"
+  "vm1-sign",
+  "vm2-sunset"
 ]
 
 function shuffleArray(array) {

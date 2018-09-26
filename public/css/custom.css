@@ -502,8 +502,11 @@ ul.social-network li {
 .social-network a:hover {
 	transition: 0.2s;
 }
-.social-network a.icoYouTube:hover {
+.social-network a.icoYouTube:hover{
 	background-color: rgb(209, 0, 0);
+}
+.social-network a.icoYelp:hover {
+	background-color: #d32323;
 }
 .social-network a.icoFacebook:hover {
 	background-color:#3B5998;
@@ -513,7 +516,7 @@ ul.social-network li {
 	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoYelp:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
