@@ -3,7 +3,7 @@
     let t = this;
     let settings = $.extend({
       // These are the default settings
-        user: 'instagram',
+        user: 'hotpinksunrise',
         posts: 12,
         perRow: 4,
         info: true,
