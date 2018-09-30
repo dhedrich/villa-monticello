@@ -108,7 +108,7 @@ app.get('/scrape', (req, res) => {
         })
 
         // console.log(entryList)
-        res.send(entryList)
+        res.send(entryList.slice(0,9))
     })
 })
 

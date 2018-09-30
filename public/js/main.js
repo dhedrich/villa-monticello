@@ -43,21 +43,22 @@ var photoArr = [
   "vm1-2",
   "vm1-6",
   // "vm1-3",
-  "vm2-front",
-  "vm1-12",
+  "vm3-front",
+  // "vm1-12",
   "vm1-1",
   "grapes-1",
-  "vm1-bedroom-edit",
+  "vm3-room",
   "house-symmetric",
-  "vm1-9",
-  "vm1-17",
+  // "vm1-9",
+  "vm3-lion-king",
+  // "vm1-17",
   "vm1-14",
   // "vm1-7",
   "vm1-sign",
-  "vm1-10",
+  // "vm1-10",
   "vm1-aerial",
-  "vm1-16",
-  "vm2-sunset"
+  // "vm1-16",
+  // "vm2-sunset"
 ]
 
 function shuffleArray(array) {
