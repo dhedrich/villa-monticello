@@ -51,13 +51,13 @@ var photoArr = [
   "vm3-room",
   "house-symmetric",
   // "vm1-9",
-  "vm3-lion-king",
   // "vm1-17",
+  "vm1-aerial",
   "vm1-14",
   // "vm1-7",
   "vm1-sign",
   // "vm1-10",
-  "vm1-aerial"
+  "vm3-lion-king"
   // "vm1-16",
   // "vm2-sunset"
 ]
