@@ -40,27 +40,27 @@ var photoArr = [
   // "vm1-13",
   // "vm1-15",
   // "grapes-sun",
+  // "vm1-3",
+  // "vm1-12",
+  // "vm1-9",
+  // "vm1-7",
+  // "vm1-10",
+  // "vm1-17",
+  // "vm1-16",
+  // "vm2-sunset"
   "vm3-front",
   "vm1-6",
   "vm3-inside",
-  // "vm1-3",
-  // "vm1-12",
   "vm1-2",
   "grapes-1",
   "vm1-1",
   "vm3-room",
   "vm3-house",
-  // "vm1-9",
-  // "vm1-17",
-  "vm1-aerial",
   "vm1-14",
-  // "vm1-7",
-  "vm1-sign",
-  // "vm1-10",
+  "vm1-aerial",
   "vm3-lion-king",
+  "vm1-sign",
   "house-symmetric"
-  // "vm1-16",
-  // "vm2-sunset"
 ]
 
 function shuffleArray(array) {
