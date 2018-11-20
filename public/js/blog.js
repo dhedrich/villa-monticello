@@ -8,12 +8,12 @@ $.ajax({
     console.log("Error: posts not found")
 })
 
-var renderBlog = data => {
-    var payload = ''
+const renderBlog = data => {
+    let payload = ''
     for (entry in data) {
         payload += 
         `
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
             <div class="card-content">
                 <div class="card-img">
                     <img src="https://alzheimers.net${data[entry].img}"/>
@@ -33,5 +33,4 @@ var renderBlog = data => {
     }
     $('.blog-entries').empty()
     $('.blog-entries').append(payload)
-
 }

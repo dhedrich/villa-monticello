@@ -3,7 +3,17 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const hb = require('express-handlebars')
 const request = require('request')
-var cheerio = require('cheerio')
+const cheerio = require('cheerio')
+const scraper = require('./igjs-master/igjs')
+const nodemailer = require('nodemailer')
+
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'escondidobandc@gmail.com',
+        pass: 'hilltopce'
+    }
+})
 
 // initialize express parameters
 const app = express()
@@ -16,7 +26,7 @@ app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-//set up handlebars for templating
+// set up handlebars for templating
 app.set('view engine', '.hbs')
 app.engine('.hbs', hb({
     defaultLayout: 'main',
@@ -35,6 +45,13 @@ app.get('/blog', (req, res) => {
 })
 app.get('/contact', (req, res) => {
     res.render('contact')
+})
+app.get('/contact-:inquiry', (req, res, next) => {
+    res.render('contact', {
+        helpers: {
+            villa: function () { return `I'd like to learn more about the ${req.params.inquiry} rooms.` }
+        }
+    })
 })
 app.get('/DCP', (req, res) => {
     res.render('DCP')
@@ -61,7 +78,28 @@ app.get('/TCPR', (req, res) => {
     res.render('TCPR')
 })
 
-// GET route to scrape articles from elder care blog
+// send contact info to email
+app.post('/email', (req, res) => {
+    console.log(req.body)
+    var mailOptions = {
+        from: req.body.email,
+        to: 'escondidobandc@gmail.com',
+        subject: `${req.body.facility} - New Message from ${req.body.name}`,
+        html: `<p><strong>Name:</strong> ${req.body.name}</p>
+        <br>
+        <p><strong>Message:</strong> ${req.body.message}</p>`
+    }
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error)
+        } else {
+            console.log(`Email sent!`)
+        }
+    })
+})
+
+// scrape articles from elder care blog
 app.get('/scrape', (req, res) => {
     var $ = cheerio.load('<div>Hello world!</div>')
     var newsUrl = 'https://www.alzheimers.net/blog/'
@@ -93,13 +131,8 @@ app.get('/scrape', (req, res) => {
             category = temp
             category = category.join(' ')
 
-            // console.log(category)
-
             var newEntry = {}
             newEntry.headline = headline
-            // if (excerpt.length > 250) {
-            //     excerpt = excerpt.slice(0,250) + `[...]`
-            // }
             newEntry.excerpt = excerpt
             newEntry.url = url
             newEntry.img = img
@@ -107,11 +140,20 @@ app.get('/scrape', (req, res) => {
             entryList.push(newEntry)
         })
 
-        // console.log(entryList)
-        res.send(entryList.slice(0,9))
+        res.send(entryList.slice(0, 9))
     })
 })
 
+// scrape instagram posts
+app.get('/insta', (req, res) => {
+    let postPromise = scraper.getPosts('verveseniorliving')
+    postPromise.then(posts => {
+        console.log(posts)
+        res.send(posts)
+    })
+})
+
+// connection to server
 app.listen(PORT, e => {
     if (e) throw e
     console.log(`LISTENING ON PORT : ${PORT}`)

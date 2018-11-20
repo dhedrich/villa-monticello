@@ -1,53 +1,59 @@
+// run lightbox on page load
 $(document).on('click', '[data-toggle="lightbox"]', function (event) {
   event.preventDefault()
   $(this).ekkoLightbox()
 })
 
+// send email from contact form
+$('#submit').on('click', function (event) {
+  console.log("WORKING")
+  event.preventDefault()
+  var data = {}
+
+  data.name = $('#contactName').val().trim()
+  data.email = $('#contactEmail').val().trim()
+  data.message = $('#contactMessage').val().trim()
+  data.facility = 'Villa Monticello'
+
+  $.ajax({
+    url: "/email",
+    method: "POST",
+    data: data
+  }).error(error => {
+    console.log("Error: message not sent")
+  })
+
+  alert("Thank you for your message!")
+    $('#contactName').val('')
+    $('#contactEmail').val('')
+    $('#contactMessage').val('')
+})
+
 // ease-in animation when element is within viewport
 $.fn.isInViewport = function () {
-  var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight();
-  var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
-  return elementBottom > viewportTop && elementTop < viewportBottom;
-};
+  var elementTop = $(this).offset().top
+  var elementBottom = elementTop + $(this).outerHeight()
+  var viewportTop = $(window).scrollTop()
+  var viewportBottom = viewportTop + $(window).height()
+  return elementBottom > viewportTop && elementTop < viewportBottom
+}
 
-var elArray = ["hidden1", "hidden2", "hidden3"]
+var elArray = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8"]
 
 window.setInterval(function () {
   for (i in elArray) {
     var el = $(`.${elArray[i]}`)
     var isInView = el.isInViewport()
     if (isInView && !el.hasClass("animated")) {
-      el.removeClass("hidden")
+      // el.removeClass(`${elArray[i]}`)
       el.addClass("animated fadeInUp fadeIn")
       el.removeAttr("style")
     }
   }
 }, 120 / 1000);
 
-/*------- Smooth Scroll -------*/
+// Photo array logic for bootstrap carousels
 var photoArr = [
-  // "bedroom",
-  // "palm-trees",
-  // "road",
-  // "tree-sunset",
-  // "vm1-3-edit",
-  // "vm1-4",
-  // "vm1-5",
-  // "vm1-8",
-  // "vm1-11",
-  // "vm1-13",
-  // "vm1-15",
-  // "grapes-sun",
-  // "vm1-3",
-  // "vm1-12",
-  // "vm1-9",
-  // "vm1-7",
-  // "vm1-10",
-  // "vm1-17",
-  // "vm1-16",
-  // "vm2-sunset"
   "vm3-front",
   "vm1-6",
   "vm3-inside",
@@ -65,47 +71,34 @@ var photoArr = [
 
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+    var j = Math.floor(Math.random() * (i + 1))
+    var temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
   }
 }
-
-// shuffleArray(photoArr)
 
 for (i in photoArr) {
-  $(".gallery").append(`<a href="./img/${photoArr[i]}.jpg" data-toggle="lightbox" class="col-sm-4" data-gallery="example-gallery"><img src="./img/${photoArr[i]}.jpg" class="img-fluid gallery-pic"></a>`)
+  $(".gallery").append(`<a href="./img/${photoArr[i]}.jpg" data-toggle="lightbox" class="col-sm-4" data-gallery="example-gallery"><img src="./img/${photoArr[i]}.jpg" class="img-fluid gallery-pic"/></a>`)
 }
 
+/*------- Smooth Scroll -------*/
 $('a[href^="#"]').on('click', function (event) {
 
-  var target = $($(this).attr('href'));
+  var target = $($(this).attr('href'))
 
   if (target.length) {
-    event.preventDefault();
+    event.preventDefault()
     $('html, body').animate({
       scrollTop: target.offset().top
-    }, 1000);
+    }, 1000)
   }
-
-});
+})
 
 /*------- Gallery Image Select -------*/
 $('.item').click(function () {
   $(this).toggleClass('active')
 })
-
-/*------- Instagram Scraper--------*/
-
-// $.ajax({
-//   method: "GET",
-//   url: ""
-// }).done(function (data) {
-//   console.log("WORKING")
-//   console.log(data)
-// })
-
 
 /**
  * Swiper 3.4.0
@@ -147,12 +140,7 @@ var swiper = new Swiper('.swiper-container', {
   speed: 2500,
   loop: true,
   autoplayDisableOnInteraction: false
-});
-
-
-
-
-
+})
 
 /* ========================================================================
 * ScrollPos-Styler v0.6
@@ -166,7 +154,7 @@ var swiper = new Swiper('.swiper-container', {
 /* exported ScrollPosStyler */
 
 var ScrollPosStyler = (function (document, window) {
-  "use strict";
+  "use strict"
 
   /* ====================
    * private variables
@@ -189,29 +177,29 @@ var ScrollPosStyler = (function (document, window) {
     // ensure that events don't stack
     if (!busy) {
       // get current scroll position from window
-      scrollPosY = window.pageYOffset;
+      scrollPosY = window.pageYOffset
 
       // if we were above, and are now below scroll position...
       if (onTop && scrollPosY > scrollOffsetY) {
         // suspend accepting scroll events
-        busy = true;
+        busy = true
 
         // remember that we are below scroll position
-        onTop = false;
+        onTop = false
 
         // asynchronuously add style / class to elements
-        window.requestAnimationFrame(belowScrollPos);
+        window.requestAnimationFrame(belowScrollPos)
 
         // if we were below, and are now above scroll position...
       } else if (!onTop && scrollPosY <= scrollOffsetY) {
         // suspend accepting scroll events
-        busy = true;
+        busy = true
 
         // remember that we are above scroll position
-        onTop = true;
+        onTop = true
 
         // asynchronuously add style / class to elements
-        window.requestAnimationFrame(aboveScrollPos);
+        window.requestAnimationFrame(aboveScrollPos)
       }
     }
   }
@@ -225,12 +213,12 @@ var ScrollPosStyler = (function (document, window) {
     // for (var elem of elements) {
     for (var i = 0; elements[i]; ++i) { // chrome workaround
       // add style / class to element
-      elements[i].classList.add("sps--abv");
-      elements[i].classList.remove("sps--blw");
+      elements[i].classList.add("sps--abv")
+      elements[i].classList.remove("sps--blw")
     }
 
     // resume accepting scroll events
-    busy = false;
+    busy = false
   }
 
   /* ====================
@@ -241,12 +229,12 @@ var ScrollPosStyler = (function (document, window) {
     // for (var elem of elements) {
     for (var i = 0; elements[i]; ++i) { // chrome workaround
       // add style / class to element
-      elements[i].classList.add("sps--blw");
-      elements[i].classList.remove("sps--abv");
+      elements[i].classList.add("sps--blw")
+      elements[i].classList.remove("sps--abv")
     }
 
     // resume accepting scroll events
-    busy = false;
+    busy = false
   }
 
 
@@ -256,29 +244,29 @@ var ScrollPosStyler = (function (document, window) {
   var pub = {
     init: function () {
       // suspend accepting scroll events
-      busy = true;
+      busy = true
 
       // get current scroll position from window
-      scrollPosY = window.pageYOffset;
+      scrollPosY = window.pageYOffset
 
       // if we are below scroll position...
       if (scrollPosY > scrollOffsetY) {
         // remember that we are below scroll position
-        onTop = false;
+        onTop = false
 
         // asynchronuously add style / class to elements
-        window.requestAnimationFrame(belowScrollPos);
+        window.requestAnimationFrame(belowScrollPos)
 
         // if we are above scroll position...
       } else { // (scrollPosY <= scrollOffsetY)
         // remember that we are above scroll position
-        onTop = true;
+        onTop = true
 
         // asynchronuously add style / class to elements
-        window.requestAnimationFrame(aboveScrollPos);
+        window.requestAnimationFrame(aboveScrollPos)
       }
     }
-  };
+  }
 
 
   /* ====================
@@ -287,13 +275,13 @@ var ScrollPosStyler = (function (document, window) {
   // add initial style / class to elements when DOM is ready
   document.addEventListener("DOMContentLoaded", function () {
     // defer initialization to allow browser to restore scroll position
-    window.setTimeout(pub.init, 1);
-  });
+    window.setTimeout(pub.init, 1)
+  })
 
   // register for window scroll events
-  window.addEventListener("scroll", onScroll);
+  window.addEventListener("scroll", onScroll)
 
 
-  return pub;
-})(document, window);
+  return pub
+})(document, window)
 

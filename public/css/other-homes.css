@@ -1,3 +1,4 @@
+/* ----Other Home Card---- */
 .social-card-header{
     position: relative;
     display: -ms-flexbox;
@@ -19,6 +20,18 @@
 .card-title {
     font-weight: bold;
     color: #000;
+    padding: 0 21px;
+}
+.other-homes .card-text{
+    margin-bottom: 24px;
+}
+@media (max-width: 768px){
+    .other-homes .card-text{
+        margin-bottom: 52px;
+    }
+}
+.other-homes .card-title {
+    color: #b38d3a;
 }
 .social-card-header i {
     font-size: 32px;
@@ -51,4 +64,117 @@
 .share:hover {
         text-decoration: none;
     opacity: 0.8;
+}
+
+/* ----Instagram Card---- */
+.list {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height:100%;
+  }
+  
+  .list--item {
+    /* width: 40%; */
+    /* float: left; */
+    /* padding: 10px; */
+    /* max-height: 300px; */
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+  }
+  .list--item figure {
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .list--item img {
+    display: block;
+    width: 100%;
+  }
+  .list--item figcaption {
+    padding: 6px 12px 12px;
+    font-size: 12px;
+    color: #444;
+    height: 50%;
+  }
+  .list--item header, .list--item figcaption {
+    padding-left: 25%;
+  }
+  .list--item header {
+    margin-top: 12px;
+  }
+  .list--item h2 {
+    font-size: 14px;
+    padding: 0 0 0;
+    margin: 0;
+  }
+  
+  .floater2 {
+    width: 20%;
+    height: 50px;
+    background: #b38d3a;
+    position: absolute;
+    left: 0;
+  }
+  
+  .fixed-height {
+    height: 97%;
+  }
+  
+  /* @media screen and (min-width: 1200px) {
+    .container {
+      width: 90%;
+    }
+  
+    .list--item {
+      width: 20%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .list--item {
+      width: 33%;
+    }
+  }
+  @media screen and (max-width: 620px) {
+    .list--item {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .list--item {
+      width: 100%;
+    }
+  } */
+
+.carousel-insta {
+    max-height: none;
+}
+.hover-caption {
+    display: none;
+    transition: 0.2s;
+}
+.carousel-item:hover .hover-caption {
+    display: block;
+    transition: 0.2s;
+}
+
+.carousel-item:hover img {
+    opacity:0.68;
+    transition: 0.2s;
+}
+
+.carousel-item img {
+    /* opacity:0.68; */
+    transition: 0.2s;
+}
+
+.carousel-inner, .carousel-inner2 {
+    background: #000;
+}
+
+.other-homes {
+    margin-top: 28px;
 }

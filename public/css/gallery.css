@@ -4,15 +4,21 @@
   -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.29);
   -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.29);
   box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.29);
+  transition: 200ms;
 }
 
 .gallery-pic:hover {
   transition: 200ms;
-  -webkit-box-shadow: 0px 0px 19px 0px rgba(179,141,58,1);
-  -moz-box-shadow: 0px 0px 19px 0px rgba(179,141,58,1);
-  box-shadow: 0px 0px 19px 0px rgba(179,141,58,1);
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(179, 141, 58, 1);
+  -moz-box-shadow: 0px 0px 19px 0px rgba(179, 141, 58, 1);
+  box-shadow: 0px 0px 19px 0px rgba(179, 141, 58, 1);
 }
 
 .modal-body {
   padding:0;
+}
+
+.gallery {
+  padding-top:20px;
+  padding-bottom:20px;
 }

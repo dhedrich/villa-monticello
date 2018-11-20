@@ -1,12 +1,12 @@
-hr {border-top: 1px solid #000; width:50%;}
+hr {border-top: 1px solid #b38d3a;}
 
 a {color: #000;}
 
 a:link{text-decoration:none;}
 
-.box1{background: #b38d3a;}
-.box2{background: #495159;}
-.box3{background: #E5D4C0;}
+.box1{background-image: url(../img/qwoeiuohevjahbhvfkdbacdlsajblliuewhfag.png);}
+.box2{background-image: url(../img/qwoeiuohevjahbhvfkdbacdlsajblliuewhfag.png);}
+.box3{background: #402c00;}
 
 #author a{
   color: #fff;
@@ -17,7 +17,7 @@ a:link{text-decoration:none;}
     color: #fff;
 }
 .contact-sec .a-2 {
-    color: #000;
+    /* color: #000; */
 }
 
 .text-center {

@@ -1,4 +1,14 @@
 /*--------Blog Cards--------*/
+.blog-entries { 
+    margin: 20px 0;
+}
+.card-body {
+    background-image: url(../img/square-bq.png)
+}
+.card-body.bg-white {
+    background: #fff;
+}
+
 .details-card {
     background: #ecf0f1;
 }
@@ -18,11 +28,16 @@
     box-shadow: 0px 0px 19px 0px rgba(179,141,58,1);
 }
 
+.card-title {
+    font-size: 36px;
+    padding-top: 18px;
+}
+
 .card-img {
 	position: relative;
 	overflow: hidden;
 	border-radius: 0;
-	z-index: 1;
+	z-index: 0;
 }
 
 .card-img img {
@@ -62,12 +77,19 @@
     width: 150px;
     text-align: center;
 }
-.card-desc {
-	padding: 1.25rem;
+.card-desc, .card-img {
+    background-image: url(../img/square-bq.png);
 }
-
+.card-desc {
+    padding: 1.25rem;
+}
+.testimonial-preview{
+    background-image: none;
+    background: rgba(179,141,58,1)!important;
+}
 .card-desc h3 {
-	color: #000000;
+    /* color: #000000; */
+    color: #402c00;
     font-weight: 600;
     font-size: 1.5em;
     line-height: 1.3em;
@@ -85,11 +107,10 @@
 	margin: 0px;
 	margin-bottom: 20px;
 	padding: 0;
-	font-family: 'Raleway', sans-serif;
+	/* font-family: 'Raleway', sans-serif; */
 }
-.btn-card{
-	background-color: #b38d3a;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+.btn-card, .btn-services, .btn-reviews, .btn-map{
+	/* box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); */
     padding: .74rem 1.44rem;
     font-size: 18px;
     -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
@@ -99,21 +120,31 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     margin: 0;
     border: 0;
-    -webkit-border-radius: .125rem;
-    border-radius: .125rem;
+    /* -webkit-border-radius: .125rem; */
+    /* border-radius: .125rem; */
     cursor: pointer;
     text-transform: uppercase;
     white-space: normal;
     word-wrap: break-word;
+    text-decoration: none;
+    color: #fff;
+}
+a.btn-card {
+    width: 100%;
+}
+.btn-card{
+    background-color: #b38d3a;
 }
 .btn-card:hover {
     background: #402c00;
     color: #fff;
 }
-a.btn-card {
-    text-decoration: none;
+.btn-services, .btn-reviews, .btn-map, .btn-card2 {
+    background-color: #402c00; 
+}
+.btn-services:hover, .btn-reviews:hover, .btn-map:hover, .btn-card2:hover{
+    background: #b38d3a;
     color: #fff;
-    width: 100%;
 }
 
 .btn-container {

@@ -2,55 +2,56 @@
     ================================================== -->
 <section class="service-sec first-sec" id="services">
     <div class="container hidden2" style="opacity:0;">
-        <div class="row section-heading">
+        {{!-- <div class="row section-heading">
             <div class="col-md-8">
                 <div class="heading">
                     <h2>
-                        <small>Our Communities</small>Other Recommended Homes</h2>
+                        <small>Our Communities</small>Recommended Homes</h2>
                     <hr>
                 </div>
             </div>
             <div class="col-md-4 section-heading-img">
                 <img class="img-fluid service-logo" src="./img/Main Logo PNG.png" alt="">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <img class="card-img-top" src="./img/hilltop-front-arch.jpg" alt="Card image cap">
+        </div> --}}
+        <div class="row other-homes">
+            <div class="col-md-7">
+                <div class="card mb-4 fixed-height">
+                    <img class="card-img-top" src="./img/twin-trees.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Hilltop Country Estate</h4>
                         <p class="card-text">
-                            Hilltop Country Estate is a private 10 bed residential care facility for the elderly,
-                            licensed
-                            by the State of California. It’s located in the serene golf community Hidden Meadows. This
-                            assisted living home is spread out over 10 acres and has beautiful views of the surrounding
-                            mountains and valley. Residents can enjoy peaceful walks amongst the many fruit trees or
-                            relax
-                            in any of the numerous outdoor seating areas.
+                            Hilltop Country Estate is a private 10 bed residential care facility for the elderly, located in the serene golf community of Hidden Meadows. This assisted living home is spread out over 10 acres and has beautiful views of the surrounding mountains and valley. 
                         </p>
-                        <div class="btn-container">
-                            <a href="#" class="btn-card">Check it out</a>
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="btn-reviews btn-map">Check us out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card mb-4 fixed-height">
+                    <div class="btn-container">
+                        <a href="https://instagram.com/escondidoboardandcare" class="btn-card btn-card2" style="text-transform:lowercase;">@escondidoboardandcare</a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Our Homes</h4>
+                        <p class="card-text">Visit us on Instagram for updates on both of our wonderful facilities!</p>
+                        <p id="error-message"><small style="color:#ccc">Error Loading Instagram Feed</small></p>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel no-shift slide carousel-fade card-img-top" data-ride="carousel"
+                        data-interval="5000">
+                        <div class="carousel-inner carousel-insta" style="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {{!-- <div class="row section-content">
-            <h3 class="obvi-link"><a href="https://dhedrich.github.io/hilltop-ce/" target="_blank">Hilltop Country
-                    Estate</a></h3>
-            <p>Hilltop Country Estate is a private 10 bed residential care facility for the elderly, licensed by
-                the
-                State of California. It’s located in the serene golf community Hidden Meadows. This assisted living
-                home is spread out over 10 acres and has beautiful views of the surrounding mountains and valley.
-                Residents can enjoy peaceful walks amongst the many fruit trees or relax in any of the numerous
-                outdoor
-                seating areas.</p>
-        </div> --}}
     </div>
 </section>
 
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="./js/igjs-master/igjs.js"></script>
-<script src="./js/igjs-master/jquery.igjs.js"></script>
+{{!--
+<script src="./js/igjs-master/jquery.igjs.js"></script> --}}
 <script src="./js/instagram.js"></script>

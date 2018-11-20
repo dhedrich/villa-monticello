@@ -1,0 +1,279 @@
+.btn-link {
+  font-size: 24px;
+}
+.btn-services-next {
+  float: right;
+  text-transform: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  width: 100%!important;
+  margin:0 0 50px 0;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.prev-correct {
+  padding: 0;
+}
+
+.btn-services-prev {
+  float: left;
+  text-transform: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  width: 100%!important;
+  margin:0 0 50px 0;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.card-body li {
+  line-height: 1.5em;
+}
+@media (max-width: 767.5px) {
+  .btn-link {
+    font-size: 16px;
+  }
+}
+#accordionExample .dcp-list {
+  /* padding: inherit; */
+  padding: 0 45px;
+}
+#accordionExample .card-body p, li {
+  font-size: 18px;
+  color: #000;
+
+}
+
+#accordionExample .card-body li:before {
+  content: '\f06c';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -2em;
+  margin-top:3.5px;
+  color: #402c00;
+  font-size: 28px;
+}
+#accordionExample .card-body li.price:before {
+  color: #402c0000;
+}
+#accordionExample .card-body li {
+  padding-left: 2.8em;
+  list-style: none;
+  font-size: 18px;
+  /* padding: 0; */
+}
+#accordionExample .card-body li.price {
+  padding-left: 0;
+}
+#accordionExample {
+  margin-bottom: 42px;
+  margin-top: 30px;
+}
+#accordionExample .collapse {
+  background-image: url(../img/square-bq.png)
+}
+#accordionExample .card-header {
+  border-radius: 0;
+  border: 0;
+  margin-top: 0px;
+}
+#accordionExample a {
+  display: block;
+  color: #fff;
+  padding: 10px 15px;
+  border-bottom: 1px solid #402c00;
+  background-color: #b38d3a;
+  text-decoration: none;
+  border-radius: 0px;
+  overflow: auto;
+}
+@media (max-width: 576px) {
+  #accordionExample a {
+    font-size: 12px;
+  }
+}
+#accordionExample .card-header a.collapsed:hover,
+#accordionExample .card-header a.collapsed:focus {
+  background-color: #402c00;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+#accordionExample .card-header a.collapsed:hover::before,
+#accordionExample .card-header a.collapsed:focus::before {
+  color: white;
+}
+#accordionExample .card-header {
+  padding: 0;
+  border-radius: 0px;
+  text-align: center;
+}
+#accordionExample .card-header a:not(.collapsed) {
+  color: white;
+  background-color: #402c00;
+  transition: all 0.2s ease-in;
+}
+
+/* Add Indicator fontawesome icon to the left */
+#accordionExample .card-header .btn-link::before {
+  font-family: 'FontAwesome';
+  content: '\f00d';
+  float: left;
+  color: white;
+  font-weight: lighter;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in;
+}
+#accordionExample .card-header .btn-link.collapsed::before {
+  color: #402c00;
+  transform: rotate(-135deg);
+  transition: all 0.2s ease-in;
+}
+
+/*-------------------------------------*/
+
+#accordion .panel {
+    border-radius: 0;
+    border: 0;
+    margin-top: 0px;
+  }
+  #accordion a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #402c00;
+    text-decoration: none;
+  }
+  #accordion .panel-heading a.collapsed:hover,
+  #accordion .panel-heading a.collapsed:focus {
+    background-color: #b38d3a;
+    color: white;
+    transition: all 0.2s ease-in;
+  }
+  #accordion .panel-heading a.collapsed:hover::before,
+  #accordion .panel-heading a.collapsed:focus::before {
+    color: white;
+  }
+  #accordion .panel-heading {
+    padding: 0;
+    border-radius: 0px;
+    text-align: center;
+  }
+  #accordion .panel-heading a:not(.collapsed) {
+    color: white;
+    background-color: #402c00;
+    transition: all 0.2s ease-in;
+  }
+  
+  /* Add Indicator fontawesome icon to the left */
+  #accordion .panel-heading .accordion-toggle::before {
+    font-family: 'FontAwesome';
+    content: '\f00d';
+    float: left;
+    color: white;
+    font-weight: lighter;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-in;
+  }
+  #accordion .panel-heading .accordion-toggle.collapsed::before {
+    color: #444;
+    transform: rotate(-135deg);
+    transition: all 0.2s ease-in;
+  }
+
+/* pricing table format */
+    ul li {
+    margin: 1.6rem 0;
+    }
+    ul li.price {
+    margin: 0 0 1.6rem 0;
+    }
+    .btn-custom1:focus{
+      outline:0;
+    }
+    .pricing-divider {
+    border-radius: 20px;
+    background: #C64545;
+    padding: 1em 0 4em;
+    position: relative;
+    }
+    .blue .pricing-divider{
+    background: #b38d3a; 
+    }
+    .green .pricing-divider {
+    background: #402c00; 
+    }
+    .red b {
+      color:#C64545
+    }
+    .blue b {
+      color:#b38d3a
+    }
+    .green b {
+      color:#402c00
+    }
+    .pricing-divider-img {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 80px;
+    }
+    .btn-custom1 {
+      background: #b38d3a;
+      transition: 0.2s;
+      border: 2px solid #b38d3a;
+    }
+    .btn-custom2 {
+      color: #fff;
+      background: #402c00;
+      transition: 0.2s;
+      border: 2px solid #402c00;
+    }
+    .btn-custom1:hover, .btn-custom2:hover {
+      transition: 0.2s;
+      background: #fff;
+      color: #000;
+    }
+    .deco-layer {
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+    }
+    
+    .img-float {
+      width:50px; position:absolute;top:-3.5rem;right:1rem
+    }
+    
+    .princing-item {
+      transition: all 150ms ease-out;
+    }
+    .princing-item:hover {
+      transform: scale(1.05);
+    }
+    .princing-item:hover .deco-layer--1 {
+      -webkit-transform: translate3d(15px, 0, 0);
+      transform: translate3d(15px, 0, 0);
+    }
+    .princing-item:hover .deco-layer--2 {
+      -webkit-transform: translate3d(-15px, 0, 0);
+      transform: translate3d(-15px, 0, 0);
+    }
+    
+    
+
+    .fine-print {
+      display: inline-block;
+      float: right;
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .fine-print p {
+      text-align: right;
+      line-height:12px;
+    }
+    @media (max-width: 576px) {
+      .princing-item {
+        margin: 25px 0;
+    }
+  }
+
+.service-header {
+  padding: 0;
+}

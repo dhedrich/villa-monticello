@@ -1,85 +1,123 @@
 <!-- Swiper Silder
 		================================================== -->
 <!-- Slider main container -->
-<div class="swiper-container main-slider" id="myCarousel">
-    <img class="img-fluid floater" src="./img/Main Logo PNG white.png" alt="">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-front.jpg')" data-hash="slide2">
-            <!-- <h2>An expansive natural getaway to soothe the soul</h2> -->
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-inside.jpg')" data-hash="slide2">
-            <!-- <h2>An expansive natural getaway to soothe the soul</h2> -->
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/grapes-1.jpg')" data-hash="slide3">
-            <!-- <h2>Feels like home</h2> -->
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-room.jpg')" data-hash="slide2">
-            <!-- <h2>An expansive natural getaway to soothe the soul</h2> -->
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-lion-king.jpg')" data-hash="slide2">
-            <!-- <h2>An expansive natural getaway to soothe the soul</h2> -->
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/aerial-shot.jpg')" data-hash="slide2">
-            <!-- <h2>An expansive natural getaway to soothe the soul</h2> -->
+<section class="carousel-sec" id="carousel">
+    <div class="section-content" style="padding:0">
+        <div class="swiper-container main-slider" id="myCarousel">
+            <img class="img-fluid floater" src="./img/Main Logo PNG white.png" alt="">
+            <div class="carousel-text">
+                <h3 class="welcome-home"><a id="services-link" href="#services">Welcome Home.</a></h3>
+                <hr>
+                <a href="/contact" class="btn-map btn-reviews change-text">&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+
+                {{!-- <p>Click or call to schedule a tour today!</p> --}}
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-front-1.jpg')" data-hash="slide1">
+                </div>
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-inside.jpg')" data-hash="slide2">
+                </div>
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/grapes-1.jpg')" data-hash="slide3">
+                </div>
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-room.jpg')" data-hash="slide4">
+                </div>
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-lion-king.jpg')"
+                    data-hash="slide5">
+                </div>
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/aerial-shot.jpg')"
+                    data-hash="slide6">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            {{!-- <div class="swiper-pagination"></div> --}}
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="fa fa-chevron-right"></i>
+            </div>
         </div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Navigation -->
-    <div class="swiper-button-prev">
-        <i class="fa fa-chevron-left"></i>
-    </div>
-    <div class="swiper-button-next">
-        <i class="fa fa-chevron-right"></i>
-    </div>
-</div>
-<div class="separator"></div>
+</section>
 
 <!-- Services
     ================================================== -->
 <section class="service-sec" id="services">
     <div class="container hidden2" style="opacity:0;">
-        <div class="row section-heading">
-            <div class="col-md-8">
-                <div class="heading">
-                    <h2>
-                        <small>Boutique Memory Care</small>Our compassion sets us apart</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="col-md-4 section-heading-img">
-                <img class="img-fluid service-logo" src="./img/Main Logo PNG.png" alt="">
-            </div>
-        </div>
         <div class="row section-content">
-            <div class="col-md-8">
-                <h3>About Villa Monticello</h3>
-                <p>
-                    Villa Monticello, a memory care facility for seniors, was conceived out of a vision to create a
-                    boutique-style community that evokes style and grace. Our goal is to provide our residents an
-                    environment that stimulates the senses, where the beauty of nature abounds and residents have the
-                    freedom to safely explore their surroundings in an environment that neither isolates nor limits
-                    their movement behind locked doors.
-                </p>
-                <p>
-                    Villa Monticello offers a unique and distinctive landscape and Italian inspired architecture. It
-                    sits nestled between gently rolling hills in the center of North Escondido and is bordered by major
-                    streets on each side of the property for visibility and accessibility. The decorative wrought iron
-                    gate opens up to welcome our guests to approximately 10 acres of property surrounded by matured
-                    tress, rock formations, a growing vineyard, multiple oak trees, and a winding driveway lined with a
-                    white picket fence leading up to 4 separate villas spread out and built on expansive areas of land.
-                </p>
-                <p>
-                    Villa Monticello is an exclusive 29-bed licensed facility serving seniors with mild to moderate
-                    dementia. It consists of four individual villas with a small capacity of 4 to 11 residents per
-                    villa giving it a warm, personal
-                    experience reminiscent of one's own home. Each villa has its own features and personality suited to
-                    the individual needs of our residents.
-                </p>
+
+            <div class="col-md-7 about-us-text green-text">
+                <h3>Our Compassion Sets Us Apart</h3>
+                <hr>
+                <p>Villa Monticello, a memory care facility for seniors, was conceived out of a vision to create a boutique-style community that evokes style and grace. Our goal is to provide our residents an environment that stimulates the senses, where the beauty of nature abounds and residents have the freedom to safely explore their surroundings in an environment that neither isolates nor limits their movement behind locked doors.</p>
             </div>
-            <div class="col-md-4">
-                <img src="./img/vm1-11.jpg" class="img-fluid service-img gallery-pic" />
+
+            <div class="gallery-preview col-md-5">
+                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="4000">
+                    <div class="carousel-inner2" style="">
+                    </div>
+                    <div class="btn-container">
+                        <a href="/AIBC" class="btn-services btn-reviews btn-map">SEE OUR SERVICES&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
+    <div class="container-fluid hidden4 white-bg" style="opacity:0;">
+        <div class="container">
+            <div class="row section-content">
+                <div class="col-md-5 map-expand">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170561.8259115928!2d-117.1987010585359!3d33.203933317643575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDEwJzQ0LjUiTiAxMTfCsDA2JzQzLjkiVw!5e0!3m2!1sen!2sus!4v1542752822629"
+                            width="100%" height="91%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="btn-container">
+                        <a href="/contact" class="btn-services btn-reviews btn-map">VISIT US&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="about-us-text">
+                        <h3 class="green-text">An Expansive Natural Getaway To Soothe The Soul</h3>
+                        <hr class="green-border">
+                        <p class="white-text">Villa Monticello offers a unique and distinctive landscape and Italian inspired architecture. It sits nestled between gently rolling hills in the center of North Escondido and is bordered by major streets on each side of the property for visibility and accessibility. The decorative wrought iron gate opens up to welcome our guests to approximately 10 acres of property surrounded by matured trees, rock formations, a growing vineyard, multiple oak trees, and a winding driveway lined with a white picket fence leading up to 4 separate villas spread out and built on expansive areas of land.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hidden5" style="opacity:0;">
+        <div class="row section-content">
+            <div class="card-desc col-md-9 col-md-push-9" style="padding: 0px; background: rgba(164,194,168,1);">
+                <div class="testimonial-preview quote-card green-card no-quote" style="">
+                    <p class="home-quote">
+                        My mother recieved outstanding care here. They are respectful, caring, and clean!! I loved
+                        visiting her while the staff would sing with other clients. Truly a special setting as well.
+                        More family members came to see her here because it was so inviting. </p>
+                    <cite style="padding-bottom: 50px;">
+                        Valerie B.
+                    </cite>
+                    <div class="btn-container">
+                        <a href="/reviews" class="btn-reviews">See more reviews&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-pull-3 gallery-preview2">
+                <div class="btn-container">
+                    <a href="https://instagram.com/escondidoboardandcare" class="btn-card btn-card2"><i class="fa fa-instagram"></i>&nbsp;&nbsp;Follow
+                        us&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./js/home.js"></script>
+{{!--
+<script src="./js/instagram.js"></script> --}}
