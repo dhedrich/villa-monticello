@@ -55,7 +55,7 @@ li {
 #accordionExample2 .card-body li:before,
 #accordionExample3 .card-body li:before,
 #accordionExample4 .card-body li:before {
-  content: '\f06c';
+  content: '\f260';
   font-family: 'FontAwesome';
   float: left;
   margin-left: -2em;
