@@ -38,7 +38,28 @@ $.fn.isInViewport = function () {
   return elementBottom > viewportTop && elementTop < viewportBottom
 }
 
-var elArray = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8"]
+// replace nav logo with brand name when page is not at top scroll position
+$(window).on('scroll', logoToggle)
+
+$(document).ready(logoToggle)
+
+function logoToggle() {
+  var isAtTop = $(window).scrollTop()
+  var width = $(window).width()
+  var brand = $('.navbar-brand.mx-auto')
+  console.log(isAtTop, width)
+  if (isAtTop != 0 || width < 992) {
+    brand.removeClass('logo-brand')
+    brand.html('Villa <span>Monticello</span>')
+  } 
+  else {
+    brand.addClass('logo-brand')
+    brand.html('<img src="./img/Main Logo PNG.png" alt="logo">')
+  }
+}
+
+var elArray = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8", "hidden9", "hidden10"]
+
 
 window.setInterval(function () {
   for (i in elArray) {

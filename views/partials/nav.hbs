@@ -1,8 +1,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg mb-4 top-bar navbar-static-top sps sps--abv">
     <div class="container hidden1" style="opacity:0;">
-        <a class="navbar-brand mx-auto" href="/">Villa
-            <span>Monticello</span>
+        <a class="navbar-brand mx-auto" href="/">
+        {{!-- Villa <span>Monticello</span> --}}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse1"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                {{!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Services
@@ -35,10 +35,13 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/TCPR">Total Care Package Rate</a>
                     </div>
-                </li>
+                </li> --}}
                 <!-- <li class="nav-item">
 						<a class="nav-link" href="/program">Program</a>
 					</li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Services</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/gallery">Gallery</a>
                 </li>
@@ -48,7 +51,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/reviews">Reviews</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="/HCE">Other Homes</a>
+                </li>
+                {{!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Other Homes
@@ -56,7 +62,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/HCE">Hilltop Country Estate</a>
                     </div>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>

@@ -45,7 +45,7 @@
 }
 .quote-card:before {
   font-family: Georgia, serif;
-  content: "“";
+  content: "";
   position: absolute;
   top: 10px;
   left: 10px;
@@ -55,7 +55,7 @@
 }
 .quote-card:after {
   font-family: Georgia, serif;
-  content: "”";
+  content: "";
   position: absolute;
   bottom: -110px;
   line-height: 100px;

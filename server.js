@@ -37,8 +37,8 @@ app.engine('.hbs', hb({
 app.get('/', (req, res) => {
     res.render('home')
 })
-app.get('/AIBC', (req, res) => {
-    res.render('AIBC')
+app.get('/services', (req, res) => {
+    res.render('services')
 })
 app.get('/blog', (req, res) => {
     res.render('blog')
@@ -53,9 +53,9 @@ app.get('/contact-:inquiry', (req, res, next) => {
         }
     })
 })
-app.get('/DCP', (req, res) => {
-    res.render('DCP')
-})
+// app.get('/DCP', (req, res) => {
+    // res.render('DCP')
+// })
 app.get('/gallery', (req, res) => {
     res.render('gallery')
 })
@@ -65,18 +65,18 @@ app.get('/HCE', (req, res) => {
 app.get('/location', (req, res) => {
     res.render('location')
 })
-app.get('/OPC', (req, res) => {
-    res.render('OPC')
-})
+// app.get('/OPC', (req, res) => {
+    // res.render('OPC')
+// })
 app.get('/reviews', (req, res) => {
     res.render('reviews')
 })
-app.get('/SS', (req, res) => {
-    res.render('SS')
-})
-app.get('/TCPR', (req, res) => {
-    res.render('TCPR')
-})
+// app.get('/SS', (req, res) => {
+    // res.render('SS')
+// })
+// app.get('/TCPR', (req, res) => {
+    // res.render('TCPR')
+// })
 
 // send contact info to email
 app.post('/email', (req, res) => {

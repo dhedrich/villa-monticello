@@ -16,7 +16,7 @@ const renderBlog = data => {
         <div class="col-lg-4 col-md-6">
             <div class="card-content">
                 <div class="card-img">
-                    <img src="https://alzheimers.net${data[entry].img}"/>
+                    <img src="https://www.alzheimers.net/${data[entry].img}"/>
                         <div class="category-container"><span><h4>${data[entry].category}</h4></span></div>
                             </div>
                     <div class="card-desc">

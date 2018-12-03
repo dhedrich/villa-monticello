@@ -4,7 +4,7 @@
 <section class="carousel-sec" id="carousel">
     <div class="section-content" style="padding:0">
         <div class="swiper-container main-slider" id="myCarousel">
-            <img class="img-fluid floater" src="./img/Main Logo PNG white.png" alt="">
+            {{!-- <img class="img-fluid floater" src="./img/Main Logo PNG white.png" alt=""> --}}
             <div class="carousel-text">
                 <h3 class="welcome-home"><a id="services-link" href="#services">Welcome Home.</a></h3>
                 <hr>
@@ -24,8 +24,7 @@
                 <div class="swiper-slide slider-bg-position" style="background:url('./img/vm3-lion-king.jpg')"
                     data-hash="slide5">
                 </div>
-                <div class="swiper-slide slider-bg-position" style="background:url('./img/aerial-shot.jpg')"
-                    data-hash="slide6">
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/aerial-shot.jpg')" data-hash="slide6">
                 </div>
             </div>
             <!-- Add Pagination -->
@@ -48,9 +47,14 @@
         <div class="row section-content">
 
             <div class="col-md-7 about-us-text green-text">
-                <h3>Our Compassion Sets Us Apart</h3>
-                <hr>
-                <p>Villa Monticello, a memory care facility for seniors, was conceived out of a vision to create a boutique-style community that evokes style and grace. Our goal is to provide our residents an environment that stimulates the senses, where the beauty of nature abounds and residents have the freedom to safely explore their surroundings in an environment that neither isolates nor limits their movement behind locked doors.</p>
+                <h3 style="margin-bottom:25px;">Our Compassion Sets Us Apart</h3>
+                {{!--
+                <hr> --}}
+                <p class="text-edit">Villa Monticello, a memory care facility for seniors, was conceived out of a
+                    vision to create a boutique-style community that evokes style and grace. Our goal is to provide our
+                    residents an environment that stimulates the senses, where the beauty of nature abounds and
+                    residents have the freedom to safely explore their surroundings in an environment that neither
+                    isolates nor limits their movement behind locked doors.</p>
             </div>
 
             <div class="gallery-preview col-md-5">
@@ -59,7 +63,8 @@
                     <div class="carousel-inner2" style="">
                     </div>
                     <div class="btn-container">
-                        <a href="/AIBC" class="btn-services btn-reviews btn-map">SEE OUR SERVICES&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+                        <a href="/services" class="btn-services btn-reviews btn-map">SEE OUR SERVICES&nbsp;&nbsp;<i
+                                class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
 
@@ -81,9 +86,17 @@
                 </div>
                 <div class="col-md-7">
                     <div class="about-us-text">
-                        <h3 class="green-text">An Expansive Natural Getaway To Soothe The Soul</h3>
-                        <hr class="green-border">
-                        <p class="white-text">Villa Monticello offers a unique and distinctive landscape and Italian inspired architecture. It sits nestled between gently rolling hills in the center of North Escondido and is bordered by major streets on each side of the property for visibility and accessibility. The decorative wrought iron gate opens up to welcome our guests to approximately 10 acres of property surrounded by matured trees, rock formations, a growing vineyard, multiple oak trees, and a winding driveway lined with a white picket fence leading up to 4 separate villas spread out and built on expansive areas of land.</p>
+                        <h3 class="green-text" style="margin-bottom:25px;">An Expansive Natural Getaway To Soothe The
+                            Soul</h3>
+                        {{!--
+                        <hr class="green-border"> --}}
+                        <p class="white-text text-edit">Villa Monticello offers a unique and distinctive landscape and
+                            Italian inspired architecture. It sits nestled between gently rolling hills in the center
+                            of North Escondido and is bordered by major streets on each side of the property for
+                            visibility and accessibility. The decorative wrought iron gate opens up to welcome our
+                            guests to approximately 10 acres of property surrounded by matured trees, rock formations,
+                            a growing vineyard, multiple oak trees, and a winding driveway lined with a white picket
+                            fence leading up to 4 separate villas spread out and built on expansive areas of land.</p>
                     </div>
                 </div>
             </div>
@@ -94,16 +107,20 @@
         <div class="row section-content">
             <div class="card-desc col-md-9 col-md-push-9" style="padding: 0px; background: rgba(164,194,168,1);">
                 <div class="testimonial-preview quote-card green-card no-quote" style="">
-                    <p class="home-quote">
-                        My mother recieved outstanding care here. They are respectful, caring, and clean!! I loved
-                        visiting her while the staff would sing with other clients. Truly a special setting as well.
-                        More family members came to see her here because it was so inviting. </p>
-                    <cite style="padding-bottom: 50px;">
-                        Valerie B.
-                    </cite>
-                    <div class="btn-container">
-                        <a href="/reviews" class="btn-reviews">See more reviews&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
-                    </div>
+                    <p class="home-quote text-edit">
+                        "My father has been living there for nearly a year. I have been quite pleased with the care he
+                        receives. In addition, the staff has many activities planned through the day to engage the
+                        residents to continue to be both physically and mentally active.
+
+                        The staff works diligently to provide the care tailored to the needs of each resident. I
+                        strongly recommend anyone looking for care of a loved one to consider Villa Monticello"
+                        <cite class="white-text">
+                            <strong>Randy Robinson</strong>
+                        <small style="padding-bottom:50px;">via <a class="a-2" href="https://www.google.com/search?rlz=1C1GGRV_enUS753US753&ei=XREFXIKbOYSM8APLt4Zg&q=villa+monticello+assisted+living&oq=villa+monticello+assisted+living&gs_l=psy-ab.3..0l2j0i22i30.443071.447354..447495...0.0..0.152.1956.5j14......0....1..gws-wiz.......0i71j35i39j0i8i13i30j0i13i5i10i30.nCJrjfLBy_Y#lrd=0x80db8b0f3b4a63eb:0xa2dd0a87388cb5a2,1,,,">Google</a></small>
+                        </cite>
+                        <div class="btn-container">
+                            <a href="/reviews" class="btn-reviews">See more reviews&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+                        </div>
                 </div>
             </div>
             <div class="col-md-3 col-md-pull-3 gallery-preview2">

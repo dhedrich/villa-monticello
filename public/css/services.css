@@ -33,17 +33,28 @@
     font-size: 16px;
   }
 }
-#accordionExample .dcp-list {
+
+#accordionExample .dcp-list,
+#accordionExample2 .dcp-list,
+#accordionExample3 .dcp-list,
+#accordionExample4 .dcp-list {
   /* padding: inherit; */
   padding: 0 45px;
 }
-#accordionExample .card-body p, li {
+#accordionExample .card-body p,
+#accordionExample2 .card-body p,
+#accordionExample3 .card-body p,
+#accordionExample4 .card-body p,
+li {
   font-size: 18px;
   color: #000;
 
 }
 
-#accordionExample .card-body li:before {
+#accordionExample .card-body li:before,
+#accordionExample2 .card-body li:before,
+#accordionExample3 .card-body li:before,
+#accordionExample4 .card-body li:before {
   content: '\f06c';
   font-family: 'FontAwesome';
   float: left;
@@ -52,31 +63,52 @@
   color: #402c00;
   font-size: 28px;
 }
-#accordionExample .card-body li.price:before {
+#accordionExample .card-body li.price:before, 
+#accordionExample2 .card-body li.price:before, 
+#accordionExample3 .card-body li.price:before, 
+#accordionExample4 .card-body li.price:before {
   color: #402c0000;
 }
-#accordionExample .card-body li {
+#accordionExample .card-body li,
+#accordionExample2 .card-body li,
+#accordionExample3 .card-body li,
+#accordionExample4 .card-body li {
   padding-left: 2.8em;
   list-style: none;
   font-size: 18px;
   /* padding: 0; */
 }
-#accordionExample .card-body li.price {
+#accordionExample .card-body li.price,
+#accordionExample2 .card-body li.price,
+#accordionExample3 .card-body li.price,
+#accordionExample4 .card-body li.price {
   padding-left: 0;
 }
-#accordionExample {
+#accordionExample,
+#accordionExample2,
+#accordionExample3,
+#accordionExample4 {
   margin-bottom: 42px;
   margin-top: 30px;
 }
-#accordionExample .collapse {
+#accordionExample .collapse,
+#accordionExample2 .collapse,
+#accordionExample3 .collapse,
+#accordionExample4 .collapse {
   background-image: url(../img/square-bq.png)
 }
-#accordionExample .card-header {
+#accordionExample .card-header, 
+#accordionExample2 .card-header, 
+#accordionExample3 .card-header, 
+#accordionExample4 .card-header {
   border-radius: 0;
   border: 0;
   margin-top: 0px;
 }
-#accordionExample a {
+#accordionExample a ,
+#accordionExample2 a ,
+#accordionExample3 a ,
+#accordionExample4 a {
   display: block;
   color: #fff;
   padding: 10px 15px;
@@ -87,42 +119,69 @@
   overflow: auto;
 }
 @media (max-width: 576px) {
-  #accordionExample a {
+  #accordionExample a,
+  #accordionExample2 a,
+  #accordionExample3 a,
+  #accordionExample4 a {
     font-size: 12px;
   }
 }
 #accordionExample .card-header a.collapsed:hover,
-#accordionExample .card-header a.collapsed:focus {
+#accordionExample .card-header a.collapsed:focus,
+#accordionExample2 .card-header a.collapsed:hover,
+#accordionExample2 .card-header a.collapsed:focus,
+#accordionExample3 .card-header a.collapsed:hover,
+#accordionExample3 .card-header a.collapsed:focus,
+#accordionExample4 .card-header a.collapsed:hover,
+#accordionExample4 .card-header a.collapsed:focus {
   background-color: #402c00;
   color: white;
   transition: all 0.2s ease-in;
 }
 #accordionExample .card-header a.collapsed:hover::before,
-#accordionExample .card-header a.collapsed:focus::before {
+#accordionExample .card-header a.collapsed:focus::before,
+#accordionExample2 .card-header a.collapsed:hover::before,
+#accordionExample2 .card-header a.collapsed:focus::before,
+#accordionExample3 .card-header a.collapsed:hover::before,
+#accordionExample3 .card-header a.collapsed:focus::before,
+#accordionExample4 .card-header a.collapsed:hover::before,
+#accordionExample4 .card-header a.collapsed:focus::before {
   color: white;
 }
-#accordionExample .card-header {
+#accordionExample .card-header,
+#accordionExample2 .card-header,
+#accordionExample3 .card-header,
+#accordionExample4 .card-header {
   padding: 0;
   border-radius: 0px;
   text-align: center;
 }
-#accordionExample .card-header a:not(.collapsed) {
+#accordionExample .card-header a:not(.collapsed),
+#accordionExample2 .card-header a:not(.collapsed),
+#accordionExample3 .card-header a:not(.collapsed),
+#accordionExample4 .card-header a:not(.collapsed) {
   color: white;
   background-color: #402c00;
   transition: all 0.2s ease-in;
 }
 
 /* Add Indicator fontawesome icon to the left */
-#accordionExample .card-header .btn-link::before {
-  font-family: 'FontAwesome';
-  content: '\f00d';
+#accordionExample .card-header .btn-link::before,
+#accordionExample2 .card-header .btn-link::before,
+#accordionExample3 .card-header .btn-link::before,
+#accordionExample4 .card-header .btn-link::before {
+font-family: 'FontAwesome';
+content: '\f00d';
   float: left;
   color: white;
   font-weight: lighter;
   transform: rotate(0deg);
   transition: all 0.2s ease-in;
 }
-#accordionExample .card-header .btn-link.collapsed::before {
+#accordionExample .card-header .btn-link.collapsed::before,
+#accordionExample2 .card-header .btn-link.collapsed::before,
+#accordionExample3 .card-header .btn-link.collapsed::before,
+#accordionExample4 .card-header .btn-link.collapsed::before {
   color: #402c00;
   transform: rotate(-135deg);
   transition: all 0.2s ease-in;
